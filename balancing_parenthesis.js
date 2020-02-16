@@ -9,17 +9,12 @@ function makeMap(string){
   }
   
   function checkPairs(map){
-    console.log("Hello", map)
     if(map['('] != map[')']){
       let max = Math.max(map['('], map[')'])
       let min = Math.min(map['('], map[')'])
-      console.log("Min", min)
-       console.log("Max", max)
-       let value = max-min
+      let value = max-min
       return value
     }
-    else 
-      return 0
   }
   
   makeDictionary("()))")
